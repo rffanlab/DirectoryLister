@@ -791,11 +791,12 @@ class DirectoryLister {
     protected function _getAppUrl() {
 
         // Get the server protocol
-        if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
-            $protocol = 'https://';
-        } else {
-            $protocol = 'http://';
-        }
+        //if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+        //    $protocol = 'https://';
+        //} else {
+        //    $protocol = 'http://';
+        //}
+        $protocol = '//';
 
         // Get the server hostname
         $host = $_SERVER['HTTP_HOST'];
